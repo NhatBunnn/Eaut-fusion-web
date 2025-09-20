@@ -7,7 +7,7 @@ This project is a **website designed to introduce East Asia University of Techno
 - **Frontend Framework:** React (via Vite.js)
 - **Styling:** Bootstrap 5
 - **Bundler & Dev Tool:** Vite.js
-- **Language:** JavaScript (ES6+)
+- **Language:** JavaScript (ES6+), typescript (Basic)
 
 ## 🌐 Features
 - Fully responsive design for desktop, tablet, and mobile
