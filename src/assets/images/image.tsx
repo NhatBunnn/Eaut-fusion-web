@@ -16,6 +16,7 @@ type ImageProps = HTMLAttributes<HTMLDivElement> & {
   height?: string | number;
   style?: CSSProperties;
   className?: string;
+  ratio?: string;
 };
 
 export const Image = ({
@@ -28,8 +29,11 @@ export const Image = ({
   height,
   style,
   className,
+  ratio = "",
   ...props
 }: ImageProps) => {
+  const [w, h] = ratio.split("/").map((d) => Number(d));
+
   return (
     <div
       onClick={onClick}
@@ -37,6 +41,7 @@ export const Image = ({
       style={{
         width: width || size,
         height: height || size,
+        aspectRatio: ratio || undefined,
         ...style,
         borderRadius: isCircled ? "100px" : "",
       }}
@@ -46,8 +51,8 @@ export const Image = ({
         src={src}
         alt={alt}
         style={{
-          width: "100%",
-          height: "100%",
+          width: !isNaN(w) && !isNaN(h) ? (w > h ? "100%" : "auto") : "100%",
+          height: !isNaN(w) && !isNaN(h) ? (w > h ? "auto" : "100%") : "100%",
         }}
       />
     </div>

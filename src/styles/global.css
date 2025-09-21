@@ -12,10 +12,6 @@
   cursor: pointer;
 }
 
-.cursor-pointer:hover {
-  background-color: var(--background-hover);
-}
-
 .link-no-style {
   color: inherit;
   text-decoration: none;
@@ -35,9 +31,52 @@
   margin: 0;
 }
 
+.liquid-glass {
+  background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0.05)
+    ),
+    radial-gradient(
+      circle at top left,
+      rgba(255, 255, 255, 0.2),
+      transparent 70%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(255, 255, 255, 0.15),
+      transparent 70%
+    );
+  backdrop-filter: blur(30px) saturate(120%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2),
+    inset 0 0 20px rgba(255, 255, 255, 0.15);
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+}
+
+.liquid-glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.liquid-glass.primary::before {
+  z-index: -1;
+  background: var(--color-primary);
+}
+
+.liquid-glass.btn-hover:hover {
+  color: var(--color-primary);
+  transition: color 0.3s ease;
+}
+
 :root {
-  /* PRIMARY COLOR */
-  --color-primary: #0866ff; /* màu chủ đạo */
+  /* CONST COLOR */
+  --color-primary: #3b82f6;
+  --color-white-const: #ffff;
 
   /* NEUTRAL COLORS */
   --color-white: #ffffff;
@@ -55,6 +94,7 @@
 
   /* BACKGROUND & SURFACE */
   --background-default: #f2f4f7;
+  --background-light: #ededed;
   --background-hover: #0000000d;
   --background-hover-white: rgba(255, 255, 255, 0.04);
   --background-backdrop: rgba(0, 0, 0, 0.5);
@@ -76,6 +116,8 @@
   --font-size-subtitle: 18px;
   --font-size-title: 24px;
   --font-size-heading: 36px;
+  --font-size-display: 48px;
+  --font-size-hero: 64px;
 
   /* REPONSIVE */
 

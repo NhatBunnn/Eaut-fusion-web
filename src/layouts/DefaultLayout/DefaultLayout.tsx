@@ -13,7 +13,7 @@ function DefaultLayout({ children }: DefaultLayoutProps) {
   return (
     <div className={c("defaultLayout")}>
       <Header />
-      <div className="">{children}</div>
+      <div className={c("container-flud", "body")}>{children}</div>
     </div>
   );
 }
