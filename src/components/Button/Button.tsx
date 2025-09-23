@@ -48,11 +48,7 @@ function Button({
         type={type}
         onClick={() => (to ? navigate(to) : onClick?.())}
       >
-        {icon && (
-          <div className={c("icon")}>
-            <FaBeer />
-          </div>
-        )}
+        {icon && <div className={c("icon")}>{icon}</div>}
         <div className={c("label")}>
           {!isLoading && label}
           {isLoading && <FaSpinner className="ms-2 fa-spin" />}

@@ -1,0 +1,33 @@
+.cardSlider {
+  width: 100%;
+  position: relative;
+
+  .btn-next,
+  .btn-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .btn-prev {
+    left: 0;
+  }
+
+  .btn-next {
+    right: 0;
+  }
+
+  .content {
+    padding: 10px;
+    overflow-x: scroll;
+
+    .slider-track {
+      gap: 15px;
+
+      .card {
+        width: 10px;
+        flex: 0 0 calc((100% - 30px) / 3);
+        box-shadow: var(--box-shadow-secondary);
+      }
+    }
+  }
+}
