@@ -2,26 +2,31 @@
   width: 100%;
   position: relative;
 
-  .btn-next,
-  .btn-prev {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  .btn-prev {
-    left: 0;
-  }
+  .navigation {
+    .btn-next,
+    .btn-prev {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+    .btn-prev {
+      left: 0;
+    }
 
-  .btn-next {
-    right: 0;
+    .btn-next {
+      right: 0;
+    }
   }
 
   .content {
     padding: 10px;
-    overflow-x: scroll;
+    margin: 0 -10px;
+    overflow-x: hidden;
 
     .slider-track {
       gap: 15px;
+      transition: transform 0.3s ease;
 
       .card {
         width: 10px;

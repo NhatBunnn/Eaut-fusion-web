@@ -1,0 +1,66 @@
+// Section: Slider
+.slider {
+  position: relative;
+  margin-bottom: 106px;
+  z-index: 1;
+
+  // Image
+  .slide {
+    border-radius: var(--radius-large);
+    aspect-ratio: 16/7;
+    width: 100%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  // Caption
+  .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+
+    .text {
+      box-shadow: var(--box-shadow-primary);
+      border-radius: var(--radius-large);
+
+      .title {
+        font-size: var(--font-size-display);
+        font-weight: lighter;
+        text-transform: uppercase;
+        color: var(--color-primary);
+      }
+      .sub-title {
+        font-size: var(--font-size-title);
+      }
+    }
+  }
+  // Statistic
+  .stats {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(50%);
+
+    .stats-card {
+      border-radius: var(--radius-large);
+      background-color: var(--color-white);
+      aspect-ratio: 300/187;
+      width: 260px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      box-shadow: var(--box-shadow-primary);
+
+      .value {
+        font-size: var(--font-size-heading);
+      }
+    }
+  }
+}

@@ -1,3 +1,17 @@
 .card {
   border: none;
+  background-color: var(--color-white);
+  border-radius: var(--radius-large);
+
+  .image {
+    border-radius: var(--radius-medium);
+  }
+
+  .title {
+    font-size: var(--font-size-subtitle);
+  }
+
+  .desc {
+    font-size: var(--font-size-small);
+  }
 }

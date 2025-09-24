@@ -1,0 +1,63 @@
+.activity::before {
+  content: "";
+  background-color: var(--background-light);
+  inset: -30px;
+  position: absolute;
+  z-index: 0;
+  transform: rotate(-2deg);
+  border-radius: var(--radius-large);
+}
+
+.activity {
+  position: relative;
+
+  .content {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "a1 a3 a4"
+      "a1 a3 a5"
+      "a2 a3 a5";
+
+    .image:nth-child(1) {
+      grid-area: a1;
+    }
+
+    .image:nth-child(2) {
+      grid-area: a2;
+    }
+
+    .image:nth-child(3) {
+      grid-area: a3;
+    }
+
+    .image:nth-child(4) {
+      grid-area: a4;
+    }
+
+    .image:nth-child(5) {
+      grid-area: a5;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      gap: 5px;
+
+      .image {
+        height: 200px;
+      }
+
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas:
+        "a1 a1 a1"
+        "a2 a2 a2"
+        "a3 a3 a3"
+        "a4 a4 a4"
+        "a5 a5 a5";
+    }
+  }
+}

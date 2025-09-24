@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import styles from "./DefaultLayout.module.scss";
 import { bindClass } from "@/utils/classnames";
-import Header from "@layouts/components/Header";
+import { Footer, Header } from "../components";
 
 const c = bindClass(styles);
 
@@ -14,6 +14,7 @@ function DefaultLayout({ children }: DefaultLayoutProps) {
     <div className={c("defaultLayout")}>
       <Header />
       <div className={c("container-flud", "body")}>{children}</div>
+      <Footer />
     </div>
   );
 }

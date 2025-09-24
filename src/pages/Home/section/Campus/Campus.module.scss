@@ -1,0 +1,50 @@
+.campus {
+  .content {
+    position: relative;
+
+    // navigarion button
+    .navigation {
+      .btn-next,
+      .btn-prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+      }
+      .btn-prev {
+        left: 0;
+      }
+
+      .btn-next {
+        right: 0;
+      }
+    }
+
+    // Slider
+    .slider {
+      overflow: hidden;
+
+      .slider-track {
+        width: 100%;
+        transition: transform 0.5s ease;
+
+        .slide {
+          flex: 0 0 100%;
+        }
+      }
+    }
+
+    // Caption
+    .caption {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30%;
+      left: 20px;
+
+      .title {
+        font-size: var(--font-size-heading);
+      }
+    }
+  }
+}

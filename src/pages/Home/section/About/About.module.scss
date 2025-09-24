@@ -1,0 +1,30 @@
+// Section: about
+.about::before {
+  content: "";
+  background-color: var(--background-light);
+  inset: -30px;
+  position: absolute;
+  z-index: 0;
+  transform: rotate(2deg);
+  border-radius: var(--radius-large);
+}
+.about {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  // text
+  .text {
+    max-width: 600px;
+    text-align: center;
+    z-index: 1;
+
+    .title {
+      font-size: var(--font-size-title);
+    }
+
+    .desc {
+    }
+  }
+}
