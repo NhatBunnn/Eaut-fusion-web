@@ -1,15 +1,16 @@
-.activity::before {
-  content: "";
-  background-color: var(--background-light);
-  inset: -30px;
-  position: absolute;
-  z-index: 0;
-  transform: rotate(-2deg);
-  border-radius: var(--radius-large);
-}
-
 .activity {
   position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    background-color: var(--background-light);
+    inset: -30px;
+    position: absolute;
+    transform: rotate(-2deg);
+    border-radius: var(--radius-large);
+    z-index: -1;
+  }
 
   .content {
     display: grid;

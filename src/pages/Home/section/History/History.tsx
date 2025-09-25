@@ -127,8 +127,8 @@ function History() {
         </div>
       </div>
       <div className="d-flex justify-content-center gap-3">
-        <Button label="<" onClick={goPrev} />
-        <Button label=">" onClick={goNext} />
+        <Button label="<" onClick={goPrev} color="primary" />
+        <Button label=">" onClick={goNext} color="primary" />
       </div>
     </div>
   );

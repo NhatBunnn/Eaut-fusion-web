@@ -16,7 +16,7 @@ function Card({ className }: CardPops) {
         className={c("image")}
         ratio="368/276"
         width="100%"
-        src="https://img.freepik.com/free-photo/computer-program-coding-screen_53876-138060.jpg?semt=ais_incoming&w=740&q=80"
+        src="https://kenh14cdn.com/203336854389633024/2023/4/30/photo1682772628140-16827726282301463572662-16828396997672050284284.jpeg"
       />
       <div className={c("title")}>Ngành công nghệ thông tin</div>
       <div className={c("desc")}>
@@ -24,7 +24,7 @@ function Card({ className }: CardPops) {
         nghiệp trong công nghệ hiện đại
       </div>
       <div className={c("subjectCombo")}>Khối xết tuyển: A01, D01 </div>
-      <Button label="Xem chi tiết" />
+      <Button label="Xem chi tiết" color="primary" />
     </div>
   );
 }

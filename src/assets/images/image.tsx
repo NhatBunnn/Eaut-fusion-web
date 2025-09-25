@@ -3,6 +3,7 @@ import { bindClass } from "@/utils/classnames";
 import type { CSSProperties, HTMLAttributes, MouseEventHandler } from "react";
 
 import eaut_logo from "@assets/images/logos/eaut_logo.png";
+import full_logo_eaut from "@assets/images/logos/full_logo_eaut.png";
 
 const c = bindClass(styles);
 
@@ -61,4 +62,5 @@ export const Image = ({
 
 export const Images = {
   logo: eaut_logo,
+  fullLogo: full_logo_eaut,
 };

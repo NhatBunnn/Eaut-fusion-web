@@ -5,6 +5,7 @@
 }
 
 .home {
-  z-index: -1;
-  background: #fff;
+  .inner {
+    background: #fff;
+  }
 }

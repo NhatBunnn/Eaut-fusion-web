@@ -16,9 +16,11 @@ function Slider() {
       </div>
       {/* Caption */}
       <div className={c("caption")}>
-        <div className={c("text", "liquid-glass", "p-3", "mb-2")}>
-          <div className={c("title")}>Đại học Công Nghệ Đông Á</div>
-          <div className={c("sub-title")}>Nơi chắp cánh ước mơ</div>
+        <div className={c("text", "p-3", "mb-2")}>
+          <div className={c("title", "font-helventin")}>
+            " Nơi chắp cánh ước mơ "
+          </div>
+          <div className={c("sub-title")}>Đại học Công Nghệ Đông Á</div>
         </div>
         <Button label="Đăng ký ngay" className="liquid-glass" />
       </div>

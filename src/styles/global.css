@@ -5,9 +5,19 @@
   src: url(../assets/fonts/Lexend-Regular.ttf);
 }
 
+@font-face {
+  font-family: helventin;
+  src: url(../assets/fonts/UTM-HELVETINS.TTF);
+}
+
 :root {
   --font-family: SVN-Segoe, Lexend-Medium, sans-serif;
 }
+
+.font-helventin {
+  font-family: helventin, SVN-Segoe, Lexend-Medium, sans-serif;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -75,7 +85,8 @@
 
 :root {
   /* CONST COLOR */
-  --color-primary: #3b82f6;
+  --color-primary: #304b88;
+  --color-primary-invert: #c47d09;
   --color-white-const: #ffff;
 
   /* NEUTRAL COLORS */
@@ -98,6 +109,7 @@
   --background-hover: #0000000d;
   --background-hover-white: rgba(255, 255, 255, 0.04);
   --background-backdrop: rgba(0, 0, 0, 0.5);
+  --background-backdrop-invert: rgba(255, 255, 255, 0.694);
 
   /* BOX SHADOW */
   --box-shadow-primary: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -139,7 +151,7 @@
 body {
   /* height: 3000px; */
   background-color: #f4f5f7;
-  font-family: var(--font-family) !important;
+  font-family: var(--font-family);
   font-size: 15px;
   color: var(--unchanged-mainBlack-textColor);
   scroll-behavior: smooth;

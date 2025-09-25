@@ -5,12 +5,16 @@ const c = bindClass(styles);
 
 type SectionTitleProps = {
   title: string;
+  subTitle?: string;
 };
 
-function SectionTitle({ title }: SectionTitleProps) {
+function SectionTitle({ title, subTitle }: SectionTitleProps) {
   return (
-    <div className={c("sectionTitle")}>
-      <div className={c("title")}>{title}</div>
+    <div className={c("sectionTitle", "mb-4")}>
+      <div className={c("inner")}>
+        <div className={c("title")}>{title}</div>
+        {!!subTitle && <div className="mt-2">{subTitle}</div>}
+      </div>
     </div>
   );
 }

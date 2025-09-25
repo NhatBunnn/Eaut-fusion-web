@@ -14,6 +14,7 @@ interface ButtonProps {
   onClick?: () => void;
   isLoading?: boolean;
   to?: string;
+  color?: "primary";
   style?: React.CSSProperties;
   className?: string;
 }
@@ -25,6 +26,7 @@ function Button({
   onClick,
   isLoading = false,
   to = "",
+  color,
   style,
   className,
 }: ButtonProps) {
@@ -37,7 +39,11 @@ function Button({
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
     >
       <button
-        style={style}
+        style={{
+          backgroundColor: color === "primary" ? "var(--color-primary)" : "",
+          color: color === "primary" ? "#fff" : "",
+          ...style,
+        }}
         className={c(
           "button",
           "d-inline-flex",

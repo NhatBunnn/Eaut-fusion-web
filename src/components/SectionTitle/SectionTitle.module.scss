@@ -1,6 +1,15 @@
 .sectionTitle {
-  .title {
-    font-size: var(--font-size-title);
+  width: 100%;
+  justify-content: center;
+  display: flex;
+
+  .inner {
+    max-width: 600px;
     text-align: center;
+
+    .title {
+      font-size: var(--font-size-title);
+      text-align: center;
+    }
   }
 }

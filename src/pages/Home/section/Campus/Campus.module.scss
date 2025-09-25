@@ -23,6 +23,8 @@
     // Slider
     .slider {
       overflow: hidden;
+      height: 500px;
+      border-radius: var(--radius-large);
 
       .slider-track {
         width: 100%;
