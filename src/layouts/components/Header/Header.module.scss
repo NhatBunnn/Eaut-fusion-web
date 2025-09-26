@@ -1,4 +1,4 @@
-// Common
+@use "/src/styles/responsive.scss" as *;
 
 .header {
   position: fixed;
@@ -10,4 +10,11 @@
   right: 0;
   border-radius: var(--radius-round);
   z-index: 1000;
+  width: 70%;
+}
+
+@include max-large {
+  .header {
+    width: 90%;
+  }
 }

@@ -65,7 +65,7 @@ function History() {
       title: "Thành lập trường",
       desc: "Trường chính thức được thành lập và khai giảng khóa học đầu tiên, đánh dấu bước khởi đầu quan trọng trong hành trình giáo dục của mình",
       image:
-        "https://kenh14cdn.com/203336854389633024/2023/4/30/photo1682772628140-16827726282301463572662-16828396997672050284284.jpeg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/df/Congtruong.JPG",
     },
     { year: "2012", title: "Khởi chương trình mới", desc: "..." },
     { year: "2018", title: "Mở rộng đào tạo", desc: "..." },
@@ -120,7 +120,7 @@ function History() {
             <Image
               src={events[currentEvent].image}
               ratio="652/435"
-              width="80%"
+              // width="80%"
               className={c("item")}
             />
           </div>

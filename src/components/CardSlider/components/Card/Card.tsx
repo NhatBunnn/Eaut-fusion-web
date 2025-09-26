@@ -16,7 +16,7 @@ function Card({ className }: CardPops) {
         className={c("image")}
         ratio="368/276"
         width="100%"
-        src="https://kenh14cdn.com/203336854389633024/2023/4/30/photo1682772628140-16827726282301463572662-16828396997672050284284.jpeg"
+        src="https://daotaodaihoc.net/uploads/news/2023_10/cong-nghe-thong-tin-la-gi.png"
       />
       <div className={c("title")}>Ngành công nghệ thông tin</div>
       <div className={c("desc")}>

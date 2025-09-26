@@ -1,3 +1,5 @@
+@use "/src/styles/responsive.scss" as *;
+
 .campus {
   .content {
     position: relative;
@@ -23,7 +25,7 @@
     // Slider
     .slider {
       overflow: hidden;
-      height: 500px;
+      // height: 500px;
       border-radius: var(--radius-large);
 
       .slider-track {
@@ -43,9 +45,25 @@
       transform: translateY(-50%);
       width: 30%;
       left: 20px;
+      color: #fff;
 
       .title {
         font-size: var(--font-size-heading);
+      }
+    }
+  }
+}
+
+@include max-tablet {
+  .campus {
+    .content {
+      .caption {
+        .title {
+          font-size: var(--font-size-body);
+        }
+        .desc {
+          font-size: var(--font-size-small);
+        }
       }
     }
   }

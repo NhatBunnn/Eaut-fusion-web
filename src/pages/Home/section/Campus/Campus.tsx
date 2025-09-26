@@ -15,7 +15,7 @@ function Campus() {
       title: "Thư viện EAUT",
       desc: "Diện tích 2.500 m², hiện đại, cung cấp sách, tài liệu điện tử và không gian học tập cho sinh viên.",
       image:
-        "https://sgp1.digitaloceanspaces.com/media-pro-saokpop/2024/04/aespa-winter-2024.jpeg",
+        "https://eaut.edu.vn/wp-content/uploads/2024/09/anh-thu-vien-truong-dai-hoc-cong-nghe-dong-a.jpg",
     },
     {
       title: "Thư viện EAUT---2",
@@ -70,7 +70,11 @@ function Campus() {
             style={{ transform: `translateX(calc(-${currentSlide} * 100%))` }}
           >
             {campusImgs?.map((d, i) => (
-              <Image src={d.image} className={c("slide")} />
+              <Image
+                src={d.image}
+                className={c("slide")}
+                style={{ maxHeight: "600px" }}
+              />
             ))}
           </div>
         </div>

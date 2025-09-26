@@ -1,3 +1,5 @@
+@use "/src/styles/responsive.scss" as *;
+
 .cardSlider {
   width: 100%;
   position: relative;
@@ -32,6 +34,18 @@
         width: 10px;
         flex: 0 0 calc((100% - 30px) / 3);
         box-shadow: var(--box-shadow-secondary);
+      }
+    }
+  }
+}
+
+@include max-desktop {
+  .cardSlider {
+    .content {
+      .slider-track {
+        .card {
+          flex: 0 0 100%;
+        }
       }
     }
   }

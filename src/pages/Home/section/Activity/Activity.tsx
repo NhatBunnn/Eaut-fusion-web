@@ -8,24 +8,21 @@ const c = bindClass(styles);
 function Activity() {
   const activityImgs = [
     {
-      image:
-        "https://sgp1.digitaloceanspaces.com/media-pro-saokpop/2024/04/aespa-winter-2024.jpeg",
+      image: "https://eaut.edu.vn/wp-content/uploads/2025/06/F8C0064.jpg",
     },
     {
       image:
-        "https://sgp1.digitaloceanspaces.com/media-pro-saokpop/2024/04/aespa-winter-2024.jpeg",
+        "https://eaut.edu.vn/wp-content/uploads/2025/09/z7016499477582_f32a83536154c8fef2dfa13fc1d0b1d2.jpg",
+    },
+    {
+      image: "https://eaut.edu.vn/wp-content/uploads/2025/08/KIM_9165.jpg",
+    },
+    {
+      image: "https://eaut.edu.vn/wp-content/uploads/2025/06/F8C9909.jpg",
     },
     {
       image:
-        "https://kenh14cdn.com/203336854389633024/2023/4/30/photo1682772628140-16827726282301463572662-16828396997672050284284.jpeg",
-    },
-    {
-      image:
-        "https://sgp1.digitaloceanspaces.com/media-pro-saokpop/2024/04/aespa-winter-2024.jpeg",
-    },
-    {
-      image:
-        "https://kenh14cdn.com/203336854389633024/2023/4/30/photo1682772628140-16827726282301463572662-16828396997672050284284.jpeg",
+        "https://eaut.edu.vn/wp-content/uploads/2025/05/z6617351104054_98514d66785dbe1b1400fc18408dedaa.jpg",
     },
   ];
 

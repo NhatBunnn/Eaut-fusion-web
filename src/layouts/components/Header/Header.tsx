@@ -16,14 +16,13 @@ function Header() {
         "liquid-glass",
         "mt-3",
         "ps-2",
-        "pe-3",
-        "w-75"
+        "pe-3"
       )}
     >
       <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
         <Image src={Images.logo} size="58px" className="cursor-pointer" />
       </motion.div>
-      <div className={c("action", "ms-auto", "d-flex", "gap-3")}>
+      <div className={c("action", "ms-auto", "gap-3", "d-none", "d-lg-flex")}>
         <Button label="Trang chủ" className="liquid-glass btn-hover" />
         <Button label="Giới thiệu" className="liquid-glass btn-hover" />
         <Button label="Ngành đào tạo" className="liquid-glass btn-hover" />

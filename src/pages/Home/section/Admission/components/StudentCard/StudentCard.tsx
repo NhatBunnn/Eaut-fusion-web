@@ -73,7 +73,7 @@ function StudentCard({
       </div>
       <div className={c("body", "d-flex", "p-3")}>
         <div className={c("avatar")}>
-          <Image src="https://i.pinimg.com/736x/c2/3b/99/c23b99f7b66abfbe9bb553c945c11bf7.jpg" />
+          <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBzW1dWg3OaQ7HM4R9BOcOx30OKsbwbApODw&s" />
         </div>
         <div className={c("content", "px-3")}>
           <div className={c("title", "mb-2")}>THẺ SINH VIÊN</div>

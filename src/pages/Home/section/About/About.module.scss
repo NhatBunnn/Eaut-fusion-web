@@ -1,3 +1,5 @@
+@use "/src/styles/responsive.scss" as *;
+
 // Section: about
 .about::before {
   content: "";

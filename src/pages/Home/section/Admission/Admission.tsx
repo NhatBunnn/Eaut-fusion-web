@@ -32,8 +32,8 @@ function Admission() {
       />
       <div className={c("content")}>
         <div className="row">
-          <div className="col">
-            <div className={c("form", "p-3")}>
+          <div className="col-12  col-lg-6  flex-center">
+            <div className={c("form", "p-3", "w-100", "mb-4", "mb-lg-none")}>
               <h3>Đăng ký ngay</h3>
               <form>
                 <ValidateInput
@@ -60,7 +60,7 @@ function Admission() {
               </form>
             </div>
           </div>
-          <div className="col">
+          <div className="col-12 col-lg-6 flex-center ">
             <div className="d-flex align-items-center h-100">
               <StudentCard
                 student={student}

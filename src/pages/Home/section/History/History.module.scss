@@ -1,3 +1,5 @@
+@use "/src/styles/responsive.scss" as *;
+
 .history {
   min-height: 120px;
   z-index: 1;
@@ -76,6 +78,17 @@
     .item {
       position: absolute;
       transform-origin: center center;
+      width: 80%;
+    }
+  }
+}
+
+@include max-tablet {
+  .history {
+    .image {
+      .item {
+        width: 100%;
+      }
     }
   }
 }
